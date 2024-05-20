@@ -1,0 +1,131 @@
+/* 780000 c1121F FDF0D5 003049 669BBC*/
+
+body {
+    background-color: #669BBC
+}
+
+#intro {
+    color: #FDF0D5;
+    height: 100vh;
+}
+
+@keyframes fadein {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+#intro h1 {
+	font-family: "Montserrat", sans-serif;
+    font-size: 96px;
+    animation: fadein ease-in 1s;
+}
+
+#intro h2 {
+	animation-delay: 1s;
+	animation-name: fadein;
+	animation-duration: 2s;
+	animation-fill-mode: forwards;
+	opacity: 0;
+}
+
+#intro h3 {
+	animation-delay: 2s;
+	animation-name: fadein;
+	animation-duration: 3s;
+	animation-fill-mode: forwards;
+	opacity: 0;
+}
+
+#intro code {
+    animation-delay: 3s;
+	animation-name: fadein;
+	animation-duration: 4s;
+	animation-fill-mode: forwards;
+	opacity: 0;
+	margin-top: 20px;
+	font-size: 30px;
+	text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+    #intro h1 {
+        font-size: 48px;
+}
+    #intro code {
+        font-size: 48px;
+    }
+}
+
+#arrowDown {
+    font-size: 75px;
+    position: absolute;
+    bottom: 30px;
+    left: calc(50% - 37.5px)
+}
+
+#about {
+	color: #FDF0D5;
+	background: #003049;
+	padding: 30px;
+
+	p {
+		font-size: 16px;
+	}
+}
+
+#contact {
+    color: #FDF0D5;
+    background: #780000;
+    padding: 30px;
+
+    a {
+        color: white;
+    }
+
+    input, 
+    textarea {
+        padding: 10px;
+        width: 100%;
+    }
+    .row {
+        margin-bottom: 15px;
+    }
+
+    .btn {
+        width: 100%;
+    }
+}
+
+#portfolio {
+    padding: 30px;
+    background: #C1121F;
+    color: #FDF0D5;
+}
+
+footer {
+	padding: 30px;
+	background: black;
+	color: white;
+}
+
+section {
+    box-shadow: -10px 0px 25px #669BBC;
+}
+
+.bg-dark {
+    background-color: #780000 !important;
+}
+
+#project {
+    background:#C1121F;
+    color: white;
+    padding: 30px;
+}
+
+.badge {
+    background-color:#003049;
+}
